@@ -1,4 +1,3 @@
-# project-alpha
 # Project Alpha: Market Event & Equities Algorithmic Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
@@ -16,8 +15,7 @@ The pipeline is orchestrated to flow through four distinct phases:
 3. **Feature Engineering & Modeling:** Refined data is pulled into Python to calculate complex risk metrics (e.g., Sharpe Ratio) and train a classification model to predict daily price action.
 4. **Serving Layer:** A FastAPI web server exposes an endpoint to serve "Buy/Sell/Hold" signals and current asset statistics to end-users.
 
-## 🗂️ Repository Structure
-\`\`\`text
+```
 financial_analytics_pipeline/
 │
 ├── data/                  # Local storage for raw backups (CSVs)
@@ -33,7 +31,7 @@ financial_analytics_pipeline/
 │
 ├── requirements.txt       # Project dependencies
 └── main.py                # Main orchestration script
-\`\`\`
+```
 
 ## 🚀 Quick Start & Installation
 
@@ -44,30 +42,31 @@ cd financial_analytics_pipeline
 \`\`\`
 
 ### 2. Set up a virtual environment
-\`\`\`bash
+```
+bash
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 3. Environment Variables
 Create a `.env` file in the root directory and add your API keys:
-\`\`\`text
+```
 ALPHA_VANTAGE_API_KEY=your_api_key_here
 FINANCIAL_NEWS_API_KEY=your_api_key_here
 DB_CONNECTION_STRING=sqlite:///database/market_data.db
-\`\`\`
-
+```
 ### 4. Run the Pipeline
 To execute the daily data pull, run the transformations, and update the model:
-\`\`\`bash
+```
 python main.py --update
-\`\`\`
+```
 
 To start the API server locally:
-\`\`\`bash
+```
+bash
 uvicorn src.api:app --reload
-\`\`\`
+```
 
 ## 📊 Core Technologies & Skills Demonstrated
 * **Languages:** Python (Pandas, NumPy), SQL (DDL, DML, Window Functions, CTEs).
