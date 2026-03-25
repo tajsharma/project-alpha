@@ -36,10 +36,11 @@ financial_analytics_pipeline/
 ## 🚀 Quick Start & Installation
 
 ### 1. Clone the repository
-\`\`\`bash
+```
+bash
 git clone https://github.com/yourusername/financial_analytics_pipeline.git
 cd financial_analytics_pipeline
-\`\`\`
+```
 
 ### 2. Set up a virtual environment
 ```
