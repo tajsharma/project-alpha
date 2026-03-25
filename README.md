@@ -77,8 +77,8 @@ uvicorn src.api:app --reload
 
 ## 👤 About the Author
 **Tajinder Sharma** *Data Analyst | Analytics Engineer* Leveraging a foundational background in Computer Science and modern Data Analytics to build scalable data infrastructure and extract actionable business insights. Currently exploring opportunities in the Dallas, TX area.
-* [LinkedIn](https://www.linkedin.com/in/yourprofile)
-* [Portfolio/Website](https://yourwebsite.com)
+* [LinkedIn]((https://www.linkedin.com/in/tajsharma5/))
+
 
 ## 🔮 Future Enhancements
 * Migrate orchestration from a standard Python script to **Apache Airflow**.
